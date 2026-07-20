@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaLocationDot,
 } from "react-icons/fa6";
+import FadeUp from "../utils/FadeUp";
 
 function Contact() {
   const contacts = [
@@ -34,9 +35,10 @@ function Contact() {
   ];
 
   return (
+    <FadeUp>
     <section
       id="contact"
-      className="py-24 px-8 lg:px-20 bg-white"
+      className="py-24 px-8 lg:px-20 bg-white dark:bg-gray-950 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -53,7 +55,7 @@ function Contact() {
               Contact
             </div>
 
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
               Get In Touch
             </h2>
 
@@ -61,7 +63,7 @@ function Contact() {
 
           {/* Right */}
 
-          <div className="text-gray-600 text-lg leading-8">
+          <div className="text-gray-600 dark:text-gray-300 text-lg leading-8">
             <p>
               I'm currently open to new opportunities.
             </p>
@@ -69,7 +71,6 @@ function Contact() {
             <p>
               Feel free to reach out. I'd love to connect!
             </p>
-
           </div>
 
         </div>
@@ -79,17 +80,21 @@ function Contact() {
         <div
           className="
             bg-white
+            dark:bg-gray-900
             border
             border-gray-200
+            dark:border-gray-700
             rounded-2xl
             p-8
             shadow-sm
+            transition-colors
+            duration-300
           "
         >
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
 
-            {contacts.map((item, index) => (
+            {contacts.map((item, index) =>
 
               item.link ? (
 
@@ -114,11 +119,11 @@ function Contact() {
                     {item.icon}
                   </div>
 
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {item.title}
                   </h3>
 
-                  <p className="text-sm text-gray-500 mt-1 break-all">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 break-all">
                     {item.value}
                   </p>
 
@@ -140,11 +145,11 @@ function Contact() {
                     {item.icon}
                   </div>
 
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {item.title}
                   </h3>
 
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     {item.value}
                   </p>
 
@@ -152,7 +157,7 @@ function Contact() {
 
               )
 
-            ))}
+            )}
 
           </div>
 
@@ -160,6 +165,7 @@ function Contact() {
 
       </div>
     </section>
+    </FadeUp>
   );
 }
 

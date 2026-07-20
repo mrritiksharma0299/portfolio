@@ -1,10 +1,12 @@
 import { FaBriefcase } from "react-icons/fa";
+import FadeUp from "../utils/FadeUp";
 
 function Experience() {
   return (
+    <FadeUp>
     <section
       id="experience"
-      className="py-24 px-8 lg:px-20 bg-white"
+      className="py-24 px-6 lg:px-20 bg-white dark:bg-gray-950 transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -17,34 +19,36 @@ function Experience() {
             Experience
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
             Internship
           </h2>
 
         </div>
 
-        {/* Experience Card */}
+        {/* Card */}
 
         <div
           className="
             bg-white
+            dark:bg-gray-900
             border
             border-gray-200
+            dark:border-gray-700
             rounded-2xl
-            p-8
+            p-6
+            md:p-8
             shadow-sm
             hover:shadow-xl
-            hover:-translate-y-1
             transition-all
             duration-300
           "
         >
 
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row md:justify-between gap-8">
 
-            {/* Left Side */}
+            {/* Left */}
 
-            <div className="flex gap-5">
+            <div className="flex gap-4 flex-1">
 
               <div
                 className="
@@ -52,6 +56,7 @@ function Experience() {
                   h-14
                   rounded-xl
                   bg-violet-100
+                  dark:bg-violet-900/30
                   text-violet-600
                   flex
                   items-center
@@ -63,11 +68,11 @@ function Experience() {
                 <FaBriefcase />
               </div>
 
-              <div>
+              <div className="min-w-0">
 
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex flex-wrap items-center gap-3">
 
-                  <h3 className="text-2xl font-bold text-gray-900">
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">
                     Python Developer Intern
                   </h3>
 
@@ -77,7 +82,9 @@ function Experience() {
                       py-1
                       rounded-full
                       bg-violet-100
+                      dark:bg-violet-900/30
                       text-violet-700
+                      dark:text-violet-300
                       text-sm
                       font-medium
                     "
@@ -87,11 +94,11 @@ function Experience() {
 
                 </div>
 
-                <p className="mt-2 text-gray-500 font-medium">
+                <p className="mt-2 text-gray-500 dark:text-gray-400 font-medium">
                   Noahnactor Private Limited
                 </p>
 
-                <p className="mt-5 text-gray-600 leading-8 max-w-3xl">
+                <p className="mt-5 text-gray-600 dark:text-gray-300 leading-8">
                   Worked on real-world projects using Python, Django and
                   MySQL, improving problem-solving and backend development
                   skills while collaborating on practical backend
@@ -102,11 +109,11 @@ function Experience() {
 
             </div>
 
-            {/* Right Side */}
+            {/* Right */}
 
-            <div className="flex items-center gap-3">
+            <div className="flex md:flex-col items-start md:items-end gap-3">
 
-              <p className="text-gray-500 font-medium whitespace-nowrap">
+              <p className="text-gray-500 dark:text-gray-400 font-medium whitespace-nowrap">
                 Jan 2024 – Mar 2024
               </p>
 
@@ -116,7 +123,9 @@ function Experience() {
                   py-1
                   rounded-full
                   bg-violet-50
+                  dark:bg-violet-900/30
                   text-violet-700
+                  dark:text-violet-300
                   text-xs
                   font-semibold
                 "
@@ -132,6 +141,7 @@ function Experience() {
 
       </div>
     </section>
+    </FadeUp>
   );
 }
 
