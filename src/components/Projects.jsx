@@ -1,18 +1,41 @@
 import {
+  FaHome,
   FaGlobe,
   FaFilm,
-  FaCode,
 } from "react-icons/fa";
 import FadeUp from "../utils/FadeUp";
 
 function Projects() {
   const projects = [
     {
+      icon: <FaHome />,
+      title: "Prince Homestay",
+      description:
+        "A modern business website developed for a real homestay in Himachal Pradesh. The website features responsive design, SEO optimization, room showcases, nearby attractions, contact information, and a seamless booking experience.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Vite",
+        "React Router",
+        "SEO",
+      ],
+
+
+      link: "https://prince-homestay-sarkidhar.vercel.app/",
+      comingSoon: false,
+    },
+    {
       icon: <FaGlobe />,
       title: "WorldThread",
       description:
-        "A modern blogging platform built with Django and Wagtail where users can create, publish and discover stories from around the world.",
-      tech: ["Django", "Wagtail", "Python"],
+        "A modern blogging platform built with Django and Wagtail where users can create, publish, and discover stories through a clean, scalable, and user-friendly content management system.",
+      tech: [
+        "Django",
+        "Wagtail",
+        "Python",
+        "PostgreSQL",
+      ],
       link: "https://blog-platform-nzzv.onrender.com",
       comingSoon: false,
     },
@@ -20,26 +43,20 @@ function Projects() {
       icon: <FaFilm />,
       title: "Movies World",
       description:
-        "A movie discovery web application built with Flask that lets users search, explore and view detailed movie information.",
-      tech: ["Flask", "Python", "HTML", "CSS"],
-      // Replace with your deployed Movies World URL when it's live
-      link: "https://github.com/mrritiksharma0299",
+        "A responsive movie discovery web application built with Flask that allows users to search movies, explore detailed information, and enjoy a clean and intuitive browsing experience.",
+      tech: [
+        "Flask",
+        "Python",
+        "REST API",
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      
+      link: "https://movies-world-mfaz.onrender.com",
       comingSoon: false,
     },
-    {
-      icon: <FaCode />,
-      title: "More Projects",
-      description:
-        "I'm continuously building new applications and experimenting with fresh ideas. More exciting projects will be added soon.",
-      tech: ["</>", "Coming Soon"],
-      link: "#",
-      comingSoon: true,
-    },
   ];
-
-  const handleComingSoon = () => {
-    alert("🚀 More exciting projects are coming soon!");
-  };
 
   return (
     <FadeUp>
@@ -157,38 +174,22 @@ function Projects() {
 
                     </div>
 
-                    {project.comingSoon ? (
-                      <button
-                        onClick={handleComingSoon}
-                        className="
-                          mt-6
-                          text-violet-600
-                          font-semibold
-                          hover:text-violet-700
-                          transition-all
-                          duration-300
-                        "
-                      >
-                        View Project →
-                      </button>
-                    ) : (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="
-                          inline-block
-                          mt-6
-                          text-violet-600
-                          font-semibold
-                          hover:text-violet-700
-                          transition-all
-                          duration-300
-                        "
-                      >
-                        View Project →
-                      </a>
-                    )}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+                        inline-block
+                        mt-6
+                        text-violet-600
+                        font-semibold
+                        hover:text-violet-700
+                        transition-all
+                        duration-300
+                      "
+                    >
+                      View Project →
+                    </a>
 
                   </div>
 

@@ -47,9 +47,9 @@ function Hero() {
           />
 
           <p className="text-lg text-gray-600 dark:text-gray-300 leading-9 max-w-xl transition-all duration-300 hover:text-gray-800 dark:hover:text-white">
-            I build beautiful, scalable and responsive web applications
-            using React, Django and Python. I enjoy turning ideas into
-            modern digital experiences.
+            I build fast, responsive, and SEO-friendly websites using React and Python.
+            I help businesses and individuals transform their ideas into modern,
+            high-performance web applications.
           </p>
 
           {/* Buttons */}

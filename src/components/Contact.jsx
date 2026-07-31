@@ -29,7 +29,7 @@ function Contact() {
     {
       icon: <FaLocationDot />,
       title: "Location",
-      value: "Himachal Pradesh",
+      value: "Himachal Pradesh, India",
       link: null,
     },
   ];
