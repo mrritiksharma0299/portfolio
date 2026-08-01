@@ -1,16 +1,212 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built using React, Vite, and Tailwind CSS. This portfolio showcases my skills, projects, education, and experience as a Full Stack Python Developer.
 
-Currently, two official plugins are available:
+## 🌍 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://your-portfolio-link.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# ✨ Features
 
-## Expanding the ESLint configuration
+### 👨‍💻 Professional Portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern landing page
+- Animated hero section
+- Responsive design
+- Smooth scrolling
+- Clean user interface
+
+### 🙋 About Me
+
+- Personal introduction
+- Education
+- Career objective
+- Developer journey
+
+### 💻 Skills
+
+- Python
+- Django
+- Flask
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Tailwind CSS
+- Bootstrap
+- MySQL
+- PostgreSQL
+- Git & GitHub
+- REST APIs
+
+### 🚀 Projects Showcase
+
+The portfolio includes my major projects:
+
+- 🏡 Prince Homestay Website
+- 📝 WorldThread Blog Platform
+- 🎬 Movies World (Flask + OMDb API)
+
+Each project contains:
+
+- Live Demo
+- GitHub Repository
+- Technology Stack
+- Project Description
+
+### 📄 Resume
+
+- Resume download button
+- Easy recruiter access
+
+### 📱 Responsive Design
+
+- Desktop
+- Tablet
+- Mobile
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Tailwind CSS
+
+## Libraries
+
+- React Router
+- React Icons
+- Framer Motion
+
+## Deployment
+
+- Vercel
+
+## Version Control
+
+- Git
+- GitHub
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/mrritiksharma0299/portfolio.git
+```
+
+Move into the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 📸 Screenshots
+
+## Home
+
+![Home](screenshots/home.png)
+
+---
+
+## About
+
+![About](screenshots/about.png)
+
+---
+
+## Skills
+
+![Skills](screenshots/skills.png)
+
+---
+
+## Projects
+
+![Projects](screenshots/projects.png)
+
+---
+
+## Contact
+
+![Contact](screenshots/contact.png)
+
+---
+
+## Mobile View
+
+![Mobile](screenshots/mobile-view.png)
+
+---
+
+# 📂 Project Structure
+
+```
+src/
+│
+├── assets/
+├── components/
+├── pages/
+├── routes/
+├── data/
+├── App.jsx
+├── main.jsx
+│
+public/
+```
+
+---
+
+# 🎯 Purpose
+
+This portfolio is designed to represent my skills, projects, and development journey. It serves as my professional portfolio for recruiters, clients, and anyone interested in my work.
+
+---
+
+# 👨‍💻 Developer
+
+**Ritik Sharma**
+
+Full Stack Python Developer
+
+GitHub:
+https://github.com/mrritiksharma0299
+
+Portfolio:
+https://your-portfolio-link.vercel.app
+
+---
+
+# 📜 License
+
+This project is developed for learning, portfolio, and professional demonstration purposes.
