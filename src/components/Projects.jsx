@@ -2,6 +2,7 @@ import {
   FaHome,
   FaGlobe,
   FaFilm,
+  FaShoppingBag,
 } from "react-icons/fa";
 import FadeUp from "../utils/FadeUp";
 
@@ -20,8 +21,6 @@ function Projects() {
         "React Router",
         "SEO",
       ],
-
-
       link: "https://prince-homestay-sarkidhar.vercel.app/",
       comingSoon: false,
     },
@@ -40,6 +39,24 @@ function Projects() {
       comingSoon: false,
     },
     {
+      icon: <FaShoppingBag />,
+      title: "NovaStore",
+      description:
+        "A full-stack e-commerce web application featuring secure JWT authentication, product catalog, search and filtering, product details, shopping cart, responsive UI, and a RESTful backend built with Django REST Framework.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Django",
+        "Django REST Framework",
+        "JWT",
+        "PostgreSQL",
+        "REST API",
+        "Vite",
+      ],
+      link: "https://novastore-6a1r.onrender.com/",
+      comingSoon: false,
+    },
+    {
       icon: <FaFilm />,
       title: "Movies World",
       description:
@@ -52,7 +69,6 @@ function Projects() {
         "CSS",
         "JavaScript",
       ],
-      
       link: "https://movies-world-mfaz.onrender.com",
       comingSoon: false,
     },
